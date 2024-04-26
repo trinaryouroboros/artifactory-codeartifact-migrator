@@ -24,6 +24,7 @@ from . import codeartifact
 from . import artifactory
 from . import caching
 from . import monitor
+from . import boto_setup
 
 logger = monitor.getLogger()
 
