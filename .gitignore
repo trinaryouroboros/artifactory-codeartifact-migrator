@@ -1,0 +1,3 @@
+dist/**
+build/**
+artifactory_codeartifact_migrator.egg-info/**
