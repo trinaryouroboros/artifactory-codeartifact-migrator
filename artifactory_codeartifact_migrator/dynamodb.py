@@ -3,6 +3,7 @@
 import boto3
 import hashlib
 from . import monitor
+from . import boto_setup
 
 logger = monitor.getLogger()
 

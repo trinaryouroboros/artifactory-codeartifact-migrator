@@ -20,6 +20,7 @@ import sys
 from urllib3.util import Retry
 from requests.adapters import HTTPAdapter
 from . import monitor
+from . import boto_setup
 
 http_timeout = 120 # seconds
 
