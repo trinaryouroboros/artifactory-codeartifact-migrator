@@ -114,7 +114,7 @@ For small repositories or specific package replication, an AWS session is fine.
 However, if you have a very large replication load you may find that the default
 AWS codeartifact token refresh may be impacted by your session expiration time.
 For those instances, it's recommended you use a service account with permanent
-access key, or a permament role for your instance or clusters to prevent such
+access key, or a permanent role for your instance or clusters to prevent such
 token generation from failing eventually.
 
 ## Connectivity
@@ -135,6 +135,8 @@ Want to contribute? Great!
 
 We recommend using the --dryrun option to validate your code executes as desired
 and test on a real CodeArtifact instance for success.
+
+Please update the version in __init__.py and tag a release when updating, based on semver.
 
 ## License
 
