@@ -43,7 +43,7 @@ class TimeoutHTTPAdapter(HTTPAdapter):
 retry_strategy = Retry(
     total=10,
     status_forcelist=[429, 500, 502, 503, 504],
-    method_whitelist=["HEAD", "GET", "OPTIONS"],
+    allowed_methods=frozenset({'GET', 'HEAD', 'OPTIONS'}),
     backoff_factor=1
 )
 
