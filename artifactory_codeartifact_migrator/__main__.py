@@ -19,14 +19,16 @@ from typing import Any
 
 from . import cli
 
-def main() -> Any:
-  try:
-    error = cli.dispatch(sys.argv[1:])
-  except Exception as exc:
-      error = True
-      print(f"{exc}", file=sys.stderr)
 
-  return error
+def main() -> Any:
+    try:
+        error = cli.dispatch(sys.argv[1:])
+    except Exception as exc:
+        error = True
+        print(f"{exc}", file=sys.stderr)
+
+    return error
+
 
 if __name__ == "__main__":
-  sys.exit(main())
+    sys.exit(main())

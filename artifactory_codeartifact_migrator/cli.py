@@ -16,12 +16,13 @@ from typing import Any, List, Tuple
 from . import replicator
 from . import argprocess
 
+
 def dispatch(argv: List[str]) -> Any:
-  """
-  dispatch does the official cli functions.
+    """
+    dispatch does the official cli functions.
 
-  :param argv: List of arguments passed to cli command
-  """
+    :param argv: List of arguments passed to cli command
+    """
 
-  args = argprocess.getArgs()
-  replicator.replicate(args)
+    args = argprocess.getArgs()
+    replicator.replicate(args)

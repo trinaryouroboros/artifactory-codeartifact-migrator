@@ -1,5 +1,6 @@
 """Top-level module for artifactory_codeartifact_migrator.
 """
+
 # Copyright 2022 Shawn Qureshi and individual contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
