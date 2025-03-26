@@ -248,7 +248,7 @@ def replicate_package(args, client, token_codeartifact, package_dict, db_file):
             caching.set_package_version_to_published(args, temp_dict['package'], temp_dict['repository'], temp_dict['version'], db_file)
 
   logger.debug(f"Packages to replicate: {packages_to_replicate}")
-  regex = re.compile("[$&+,:;=?#|'<>^*()%!\"\s\[\]]")
+  regex = re.compile(r"[$&+,:;=?#|'<>^*()%!\"\s\[\]]")
   for package in packages_to_replicate:    
     publish_error = ""
     publish_fail = False

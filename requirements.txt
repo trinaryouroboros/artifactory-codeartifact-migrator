@@ -4,3 +4,4 @@ requests==2.27.0
 requests-toolbelt==0.9.1
 twine==3.8.0
 jmespath==0.10.0
+setuptools==78.1.0
