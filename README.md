@@ -13,7 +13,7 @@ your artifacts from Artifactory to AWS CodeArtifact.
 
 ## Installation
 
-ACM requires Python 3.7 or higher to run.
+ACM requires Python 3.7 <= version < 3.13 to run. 
 
 Using pipenv is the recommended way to install and run ACM.
 
