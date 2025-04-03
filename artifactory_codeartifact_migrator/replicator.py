@@ -711,7 +711,7 @@ def replicate(args):
       if args.refresh:
         logger.info(f"Refreshing all packages in {repository}")
         caching.reset_fetched_packages(args, repository, db_file)
-        package_type = get_package_type(repository, artifactory_repos)
+      package_type = get_package_type(repository, artifactory_repos)
       replicate_repository(args, client, repository, package_type, codeartifact_repos, db_file)
   else:
     logger.info('All repository replication specified')
